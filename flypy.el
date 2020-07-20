@@ -2,7 +2,10 @@
 
 (quail-define-package
  "chinese-flypy" "Chinese" "鹤" t "flypy"
- '((" " . quail-select-current)) t nil nil nil nil nil nil nil nil t)
+ '((" " . quail-select-current)
+   (";" . (lambda (interactive) (execute-kbd-macro "2")))
+   ("'" . (lambda (interactive) (execute-kbd-macro "3")))
+   ) t nil nil nil nil nil nil nil nil t)
 
 (quail-define-rules
  ("," ["，"])
