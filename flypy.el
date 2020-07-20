@@ -3,8 +3,13 @@
 (quail-define-package
  "chinese-flypy" "Chinese" "鹤" t "flypy"
  '((" " . quail-select-current)
+<<<<<<< HEAD
    (";" . (lambda (interactive) (execute-kbd-macro "2")))
    ("'" . (lambda (interactive) (execute-kbd-macro "3")))
+=======
+   (";" . (lambda (interactive (execute-kbd-macro "2"))))
+   ("'" . (lambda (interactive (execute-kbd-macro "3"))))
+>>>>>>> 7101b0d8cd706e48486ddf4e90c6655ae8ae9e1e
    ) t nil nil nil nil nil nil nil nil t)
 
 (quail-define-rules
